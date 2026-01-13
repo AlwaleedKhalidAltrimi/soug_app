@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'core/routes/route_generator.dart';
 import 'core/utils/app_colors.dart';
 
 void main() {
@@ -22,6 +22,7 @@ class SougAPP extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.black),
         ),
       ),
+      onGenerateRoute: routeGenerator,
     );
   }
 }
