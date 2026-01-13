@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'core/utils/app_colors.dart';
+
 void main() {
   runApp(const SougAPP());
 }
@@ -9,6 +11,17 @@ class SougAPP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Soug',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.backgroundColor,
+        colorScheme: ColorScheme.light(secondary: AppColors.secondaryColor),
+        appBarTheme: const AppBarTheme(
+          elevation: 0,
+          iconTheme: IconThemeData(color: Colors.black),
+        ),
+      ),
+    );
   }
 }
