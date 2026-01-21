@@ -1,0 +1,32 @@
+{
+  "name": "sougapp",
+  "version": "1.0.0",
+  "description": "e com app.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlwaleedKhalidAltrimi/soug_app.git"
+  },
+  "author": "Alwaleed Khalid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlwaleedKhalidAltrimi/soug_app/issues"
+  },
+  "homepage": "https://github.com/AlwaleedKhalidAltrimi/soug_app#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^9.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
